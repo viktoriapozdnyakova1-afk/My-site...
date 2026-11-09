@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Гори України — краса Карпат</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #26352d;
+      background: #f2f6f1;
+    }
+    header {
+      min-height: 390px;
+      padding: 75px 20px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      color: white;
+      background:
+        linear-gradient(rgba(10, 35, 25, .48), rgba(10, 35, 25, .58)),
+        url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1800&q=85") center/cover;
+    }
+    header h1 { margin: 0; font-size: clamp(2.3rem, 6vw, 4.5rem); }
+    header p { max-width: 700px; font-size: 1.15rem; }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 22px;
+      padding: 14px;
+      background: #234c3b;
+    }
+    nav a { color: white; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    main { width: min(1100px, 92%); margin: 35px auto; }
+    section { margin: 42px 0; }
+    h2 { color: #24543d; font-size: 1.9rem; }
+    .intro {
+      padding: 22px;
+      border-left: 5px solid #6b9b70;
+      background: white;
+      border-radius: 8px;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 22px;
+    }
+    .card {
+      overflow: hidden;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(0,0,0,.08);
+    }
+    .card img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      display: block;
+    }
+    .card-content { padding: 17px; }
+    .card h3 { margin-top: 0; color: #24543d; }
+    .fact-list {
+      padding: 22px 25px;
+      background: #e2eee3;
+      border-radius: 10px;
+    }
+    footer {
+      padding: 25px;
+      text-align: center;
+      color: white;
+      background: #234c3b;
+    }
+    @media (max-width: 600px) {
+      header { min-height: 320px; padding: 55px 18px; }
+      nav { gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header id="top">
+    <div>
+      <h1>Гори України</h1>
+      <p>Карпати — дивовижний світ високих вершин, зелених полонин, гірських річок і чистого повітря.</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#about">Про гори</a>
+    <a href="#places">Відомі місця</a>
+    <a href="#nature">Природа</a>
+    <a href="#facts">Цікаві факти</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>Українські гори</h2>
+      <div class="intro">
+        <p>На заході України розташовані Українські Карпати — частина великої гірської системи Карпат. Вони простягаються через кілька областей і приваблюють людей мальовничими краєвидами, лісами, водоспадами та гірськими озерами.</p>
+        <p>Гори важливі не лише для туризму. Вони є домівкою для багатьох рослин і тварин, зберігають водні ресурси та впливають на клімат місцевості.</p>
+      </div>
+    </section>
+
+    <section id="places">
+      <h2>Відомі гірські місця</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Гірський краєвид">
+          <div class="card-content">
+            <h3>Говерла</h3>
+            <p>Найвища вершина України — 2061 метр над рівнем моря. Вона розташована в масиві Чорногора й є популярним місцем для гірських походів.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=80" alt="Гірське озеро серед гір">
+          <div class="card-content">
+            <h3>Озеро Синевир</h3>
+            <p>Одне з найвідоміших гірських озер України. Воно оточене лісами та горами, а його краєвиди приваблюють мандрівників упродовж року.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80" alt="Високі гірські вершини">
+          <div class="card-content">
+            <h3>Чорногора</h3>
+            <p>Найвищий гірський масив Українських Карпат. Тут розташовані найвищі вершини країни, зокрема Говерла та Бребенескул.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="nature">
+      <h2>Рослинний і тваринний світ</h2>
+      <div class="intro">
+        <p>На гірських схилах ростуть букові, ялинові та смерекові ліси. Вище розташовані полонини — відкриті гірські луки, де влітку квітнуть різноманітні трави.</p>
+        <p>У Карпатах живуть бурі ведмеді, рисі, олені, козулі та багато видів птахів. Деякі рідкісні рослини й тварини охороняються законом, адже їхнє існування залежить від збереження природного середовища.</p>
+      </div>
+    </section>
+
+    <section id="facts">
+      <h2>Цікаві факти про Карпати</h2>
+      <div class="fact-list">
+        <ul>
+          <li>Говерла має висоту 2061 метр і є найвищою вершиною України.</li>
+          <li>У Карпатах бере початок багато річок, зокрема Прут і Тиса.</li>
+          <li>На гірських луках можна побачити рослини, які не трапляються в низинах.</li>
+          <li>Карпатські ліси допомагають зберігати ґрунти та регулювати водний режим.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Чому потрібно берегти гори?</h2>
+      <p>Карпати — цінна природна спадщина України. Важливо не залишати сміття, не пошкоджувати рослини, не турбувати диких тварин і дотримуватися правил заповідних територій. Відповідальне ставлення до природи допоможе зберегти красу гір для наступних поколінь.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Гори України — природне багатство, яке варто берегти.</p>
+    <a href="#top" style="color:white;">На початок сторінки ↑</a>
+  </footer>
+</body>
+</html>
